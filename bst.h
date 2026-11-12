@@ -518,7 +518,7 @@ void BinarySearchTree<Key, Value>::remove(const Key& key)
         parent->setLeft(child);
     } else {
         parent->setRight(child);
-	
+
 	}
 
     delete target;
@@ -624,7 +624,7 @@ Node<Key, Value>* BinarySearchTree<Key, Value>::internalFind(const Key& key) con
         if (key < cursor->getKey()) {
             cursor = cursor->getLeft();
         }
-       
+
         else if (cursor->getKey() < key) {
             cursor = cursor->getRight();
         } else {
